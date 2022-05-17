@@ -1,0 +1,162 @@
+:root{
+  /* Dark colors */
+  --spacecadet-dark:#313D5A;
+  --dark-sienna:#49111C;
+
+  /* Light colors */
+  --deepchampagne:#FFD599;
+  --cultured: #F2F4F3;
+
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: #EDE7E3;
+}
+
+h1{
+  color: var(--dark-sienna)
+}
+
+img{
+  height: 300px;
+  width: 250px;
+}
+
+nav,footer{
+  clear: both;
+  color: var(--cultured);
+  background-color: var(--dark-sienna);
+  height: 30px;
+  text-align: center;
+}
+
+nav ul{
+  margin: 0px;
+  padding: 5px 0px 5px 30px;
+}
+
+nav li{
+  display: inline;
+  margin-right: 40px;
+}
+
+nav li a {
+  color: var(--cultured);
+}
+
+.wrapper{
+  text-align: center;
+  padding: 2%;
+  background-color: var(--dark-sienna);
+}
+
+.d-flex{
+  width: 15rem;
+
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  /* height: 300px; /* Should be removed. Only for demonstration */ */
+}
+
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* Homepage Main Body */
+.card{
+  padding-left: 10em;
+  background-color: inherit;
+  border: none;
+}
+
+.card-header{
+  background-color: var(--deepchampagne);
+}
+
+.card-body{
+  background-color: #EDE7E3;
+}
+
+.card-img-top{
+  height: 15rem;
+}
+
+/* The side navigation menu */
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 10%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 0; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: var(--dark-sienna);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--cultured);
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+/* Footer */
+.footersection{
+  padding: 7%;
+  background-color: var(--dark-sienna);
+  text-align: center;
+}
+
+.footer-fa{
+  padding-right: 15px;
+}
